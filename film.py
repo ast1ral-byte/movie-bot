@@ -1,10 +1,11 @@
 import requests
 import random
+import os
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TELEGRAM_TOKEN ="8648156756:AAE2TILU0NwnF8zn7ap06MfUPhukJBjBtYA"
-TMDB_API_KEY ="57790011db603d03ea8dc41743499835"
+TELEGRAM_TOKEN = os.getenv"8648156756:AAE2TILU0NwnF8zn7ap06MfUPhukJBjBtYA"
+TMDB_API_KEY = os.getenv"57790011db603d03ea8dc41743499835"
 
 # Жанры с эмодзи
 GENRES = {
